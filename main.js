@@ -89,14 +89,10 @@ class Render extends CreateElements {
         this.buttonBlock.setAttribute('style','display: flex; justify-content: space-around; align-items: center; width: 100px; height: 40px;');
         panel.setAttribute('style', 'display: flex; justify-content: space-around; align-items: center; position: fixed; top: 10px; right: 0; border: 1px solid rgba(0,0,0, .2); box-shadow: 0 0 20px rgba(0,0,0, .5); width: 300px; height: 60px; background-color: #fff;')
         this.clear.innerHTML = '&times';
-        this.clear.setAttribute('style', 'font-size: 20px; cursor: pointer;');
-
-        
+        this.clear.setAttribute('style', 'font-size: 20px; cursor: pointer;');        
 
         this.buttonBlock.append(scaleInputSmall, scaleInputMedium);
-
         panel.classList.add('panel');
-
         document.querySelector('body').append(panel);        
     }
 }
