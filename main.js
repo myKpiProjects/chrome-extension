@@ -91,8 +91,7 @@ class Render extends CreateElements {
         this.clear.innerHTML = '&times';
         this.clear.setAttribute('style', 'font-size: 20px; cursor: pointer;');        
 
-        this.buttonBlock.append(scaleInputSmall, scaleInputMedium);
-        panel.classList.add('panel');
+        this.buttonBlock.append(scaleInputSmall, scaleInputMedium);        
         document.querySelector('body').append(panel);        
     }
 }
