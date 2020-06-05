@@ -1,0 +1,50 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "semi": "error"
+    }
+}
+
+{
+    "parser": "esprima",
+    "rules": {
+        "semi": "error"
+    }
+}
+
+{
+    "plugins": ["a-plugin"],
+    "processor": "a-plugin/a-processor"
+}
+
+{
+    "plugins": ["a-plugin"],
+    "overrides": [
+        {
+            "files": ["*.md"],
+            "processor": "a-plugin/markdown"
+        }
+    ]
+}
+
+{
+    "plugins": ["a-plugin"],
+    "overrides": [
+        {
+            "files": ["*.md"],
+            "processor": "a-plugin/markdown"
+        },
+        {
+            "files": ["**/*.md/*.js"],
+            "rules": {
+                "strict": "off"
+            }
+        }
+    ]
+}
