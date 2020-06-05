@@ -1,3 +1,6 @@
+const body = document.querySelector('body');
+let defaultBackground = window.getComputedStyle(body, null).backgroundColor;
+
 class CreateElements {
     constructor() {
         this.buttonBlock = document.createElement('div');
@@ -59,7 +62,7 @@ class CreateElements {
     reset() {
         localStorage.clear();
         this.scale = 1;
-        this.color = '#ffffff';
+        this.color = defaultBackground;
         this.setBackgroundColor();
         this.onScaleChange();
     }
@@ -98,3 +101,4 @@ class Render extends CreateElements {
 
 const render = new Render;
 render.render();
+
