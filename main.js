@@ -1,5 +1,10 @@
 const body = document.querySelector('body');
 let defaultBackground = window.getComputedStyle(body, null).backgroundColor;
+const bgImage = document.body.style.backgroundImage;
+
+if(!document.querySelector('body')) {
+    alert (the script does not work, missing body)
+};
 
 class CreateElements {
     constructor() {
@@ -62,6 +67,7 @@ class CreateElements {
     reset() {
         localStorage.clear();
         this.scale = 1;
+        this.backgroundImage = bgImage;
         this.color = defaultBackground;
         this.setBackgroundColor();
         this.onScaleChange();
