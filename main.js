@@ -3,7 +3,7 @@ let defaultBackground = window.getComputedStyle(body, null).backgroundColor;
 const bgImage = document.body.style.backgroundImage;
 
 if(!document.querySelector('body')) {
-    alert (the script does not work, missing body)
+    alert ('the script does not work, missing body');
 };
 
 class CreateElements {
